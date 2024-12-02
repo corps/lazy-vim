@@ -19,6 +19,11 @@ vim.api.nvim_set_keymap("n", "<d-w>", ":lua Snacks.bufdelete.delete()<CR>", { no
 vim.api.nvim_set_keymap("n", "<Space>d", ':lua Snacks["dashboard"].open()<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<Space>t", ":lua Snacks.terminal.toggle()<CR>", { noremap = true, silent = true })
 
+vim.api.nvim_set_keymap("n", "<Space>p", ":CdProjectTab<CR>", { noremap = true, silent = true })
+
+vim.api.nvim_set_keymap("v", "<d-/>", "gc", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<d-/>", "gcc", { noremap = true, silent = true })
+
 vim.keymap.del("n", "<space>K")
 vim.keymap.del("n", "<space>L")
 vim.keymap.del("n", "<space>`")
