@@ -2,5 +2,17 @@
   {
     "name": "nvim",
     "path": "/Users/zachcollins/.config/nvim"
+  },
+  {
+    "name": "mathematics_in_lean",
+    "path": "/Users/zachcollins/mathematics_in_lean"
+  },
+  {
+    "name": "nix-machines",
+    "path": "/Users/zachcollins/nix-machines"
+  },
+  {
+    "name": "zachcollins",
+    "path": "/Users/zachcollins"
   }
 ]

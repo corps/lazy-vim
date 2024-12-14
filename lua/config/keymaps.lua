@@ -21,8 +21,13 @@ vim.api.nvim_set_keymap("n", "<Space>t", ":lua Snacks.terminal.toggle()<CR>", { 
 
 vim.api.nvim_set_keymap("n", "<Space>p", ":CdProjectTab<CR>", { noremap = true, silent = true })
 
-vim.api.nvim_set_keymap("v", "<d-/>", "gc", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "<d-/>", "gcc", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("v", "<d-/>", "gc", { silent = true })
+vim.api.nvim_set_keymap("n", "<d-/>", "gcc", { silent = true })
+
+vim.api.nvim_set_keymap("n", "<d-[>", "<C-o>", { silent = true })
+vim.api.nvim_set_keymap("n", "<d-]>", "<C-i>", { silent = true })
+
+vim.api.nvim_set_keymap("n", "<d-b>", "gd", { silent = true })
 
 vim.keymap.del("n", "<space>K")
 vim.keymap.del("n", "<space>L")
