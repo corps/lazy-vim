@@ -8,7 +8,7 @@ return {
   },
   config = {
     client_callback = function(port, _)
-      local cmd = ("neovide --server localhost:%s"):format(port)
+      local cmd = ("/Applications/Neovide.app/Contents/MacOS/neovide --server localhost:%s"):format(port)
       vim.fn.jobstart(cmd, {
         detach = true,
         on_exit = function(job_id, exit_code, event_type)
