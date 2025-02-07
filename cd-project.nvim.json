@@ -14,5 +14,9 @@
   {
     "name": "zachcollins",
     "path": "/Users/zachcollins"
+  },
+  {
+    "name": "lean.nvim",
+    "path": "/Users/zachcollins/projects/lean.nvim"
   }
 ]

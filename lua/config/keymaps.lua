@@ -5,8 +5,9 @@
 
 vim.api.nvim_set_keymap("n", "<d-c>", '"*y :let @+=@*<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<d-v>", '"+p', { noremap = true, silent = true })
-vim.api.nvim_set_keymap("i", "<d-c>", '"*y :let @+=@*<CR>', { noremap = true, silent = true })
-vim.api.nvim_set_keymap("i", "<d-v>", '"+p', { noremap = true, silent = true })
+
+vim.api.nvim_set_keymap("i", "<d-v>", "<C-R>+", { noremap = true, silent = true })
+
 vim.api.nvim_set_keymap("v", "<d-c>", '"*y :let @+=@*<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap("v", "<d-v>", '"+p', { noremap = true, silent = true })
 vim.api.nvim_set_keymap("x", "<d-c>", '"*y :let @+=@*<CR>', { noremap = true, silent = true })
@@ -20,6 +21,8 @@ vim.api.nvim_set_keymap("n", "<Space>d", ':lua Snacks["dashboard"].open()<CR>', 
 vim.api.nvim_set_keymap("n", "<Space>t", ":lua Snacks.terminal.toggle()<CR>", { noremap = true, silent = true })
 
 vim.api.nvim_set_keymap("n", "<Space>p", ":CdProjectTab<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<Space>r", ":RemoteStart<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<Space>i", ":LeanInfoviewToggle<CR>", { noremap = true, silent = true })
 
 vim.api.nvim_set_keymap("v", "<d-/>", "gc", { silent = true })
 vim.api.nvim_set_keymap("n", "<d-/>", "gcc", { silent = true })

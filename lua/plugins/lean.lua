@@ -1,5 +1,8 @@
 return {
   "Julian/lean.nvim",
+  -- "lean.nvim",
+  -- name = "lean",
+  -- dev = true,
   event = { "BufReadPre *.lean", "BufNewFile *.lean" },
 
   dependencies = {
@@ -10,6 +13,8 @@ return {
     "hrsh7th/cmp-buffer",
     "AndrewRadev/switch.vim",
   },
+
+  config = function() end,
 
   -- see details below for full configuration options
   opts = {
@@ -59,6 +64,18 @@ return {
       -- Show indicators for pin locations when entering an infoview window?
       -- always | never | auto (= only when there are multiple pins)
       indicators = "auto",
+    },
+
+    progress_bars = {
+      -- Enable the progress bars?
+      -- By default, this is `true` if satellite.nvim is not installed, otherwise
+      -- it is turned off, as when satellite.nvim is present this information would
+      -- be duplicated.
+      enable = true, -- see above for default
+      -- What character should be used for the bars?
+      character = "│",
+      -- Use a different priority for the signs
+      priority = 10,
     },
 
     stderr = {

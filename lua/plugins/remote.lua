@@ -6,7 +6,7 @@ return {
     "MunifTanjim/nui.nvim", -- To build the plugin UI
     "nvim-telescope/telescope.nvim", -- For picking b/w different remote methods
   },
-  config = {
+  opts = {
     client_callback = function(port, _)
       local cmd = ("/Applications/Neovide.app/Contents/MacOS/neovide --server localhost:%s"):format(port)
       vim.fn.jobstart(cmd, {
@@ -17,5 +17,16 @@ return {
         end,
       })
     end,
+
+    remote = {
+      copy_dirs = {
+        config = {
+          compression = {
+            enabled = true,
+            additional_opts = { "--exclude-vcs" },
+          },
+        },
+      },
+    },
   },
 }
