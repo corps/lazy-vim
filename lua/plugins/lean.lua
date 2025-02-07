@@ -8,9 +8,10 @@ return {
   dependencies = {
     "neovim/nvim-lspconfig",
     "nvim-lua/plenary.nvim",
-    "hrsh7th/nvim-cmp",
-    "hrsh7th/cmp-nvim-lsp",
-    "hrsh7th/cmp-buffer",
+    "Saghen/blink.cmp",
+    -- "hrsh7th/nvim-cmp",
+    -- "hrsh7th/cmp-nvim-lsp",
+    -- "hrsh7th/cmp-buffer",
     "AndrewRadev/switch.vim",
   },
 

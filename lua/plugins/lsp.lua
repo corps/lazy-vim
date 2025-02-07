@@ -1,7 +1,7 @@
 return {
   {
     "neovim/nvim-lspconfig",
-    dependencies = { "hrsh7th/nvim-cmp" },
+    -- dependencies = { "hrsh7th/nvim-cmp" },
     opts = {
       servers = {
         nixd = {},
