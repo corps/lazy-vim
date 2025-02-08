@@ -22,7 +22,7 @@ return {
       copy_dirs = {
         config = {
           compression = {
-            enabled = true,
+            enabled = false,
             additional_opts = { "--exclude-vcs" },
           },
         },
