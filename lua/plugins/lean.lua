@@ -13,9 +13,8 @@ return {
     -- "hrsh7th/cmp-nvim-lsp",
     -- "hrsh7th/cmp-buffer",
     "AndrewRadev/switch.vim",
+    "lewis6991/satellite.nvim",
   },
-
-  config = function() end,
 
   -- see details below for full configuration options
   opts = {
@@ -45,7 +44,7 @@ return {
       -- Setting this to `true` is the same as `function() return true end`,
       -- i.e. autoopen for any Lean file, or setting it to `false` is the
       -- same as `function() return false end`, i.e. never autoopen.
-      autoopen = false,
+      autoopen = true,
 
       -- Set infoview windows' starting dimensions.
       -- Windows are opened horizontally or vertically depending on spacing.
@@ -80,7 +79,7 @@ return {
     },
 
     stderr = {
-      enable = true,
+      enable = false,
       -- height of the window
       height = 5,
       -- a callback which will be called with (multi-line) stderr output
