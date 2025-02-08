@@ -33,6 +33,7 @@
   "remote-nvim.nvim": { "branch": "main", "commit": "66fc20fd259401c7bb6ac5189ecb6283c2eb65d2" },
   "snacks.nvim": { "branch": "main", "commit": "790d257c48f0455304c86366c197e5ffe2d80844" },
   "switch.vim": { "branch": "main", "commit": "0de9b271dfb840e71e36e831f6a487f3422ff562" },
+  "telescope-live-grep-args.nvim": { "branch": "master", "commit": "649b662a8f476fd2c0289570764459e95ebaa3f3" },
   "telescope.nvim": { "branch": "master", "commit": "415af52339215926d705cccc08145f3782c4d132" },
   "todo-comments.nvim": { "branch": "main", "commit": "304a8d204ee787d2544d8bc23cd38d2f929e7cc5" },
   "tokyonight.nvim": { "branch": "main", "commit": "dca4adba7dc5f09302a00b0e76078d54d82d2658" },
