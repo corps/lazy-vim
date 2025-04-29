@@ -20,9 +20,9 @@ local base_mistral_chat = {
   create = input_if_selection,
   system = "You are a helpful assistant",
   params = {
-    model = "open-mistral-nemo-2407",
-    max_tokens = 150,
-    temperature = 0.7,
+    model = "mistral-small-latest",
+    max_tokens = 1024,
+    temperature = 0.3,
   },
   run = system_as_first_message,
   options = {

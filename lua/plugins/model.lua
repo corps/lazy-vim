@@ -27,9 +27,9 @@ return {
         },
         builder = function(input)
           return {
-            model = "open-mistral-nemo-2407",
+            model = "mistral-small-latest",
             temperature = 0.3,
-            max_tokens = 400,
+            max_tokens = 1024,
             messages = {
               {
                 role = "system",
